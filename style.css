@@ -1,12 +1,90 @@
+:root {
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+    --space-7: 96px;
+    --space-8: 128px;
+
+    --font-size-m: 1rem;
+    --font-size-l: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+
+    --color-primary: hsl(160deg, 100%, 30%);
+    --color-secondary-light: hsl(45deg, 100%, 50%);
+    --color-secondary-dark: hsl(45deg, 100%, 40%);
+    --color-black: hsl(0deg, 0%, 0%);
+    --color-gray-xdark: hsl(0deg, 0%, 10%);
+    --color-gray-dark: hsl(0deg, 0%, 30%);
+    --color-gray-m: hsl(0deg, 0%, 40%);
+    --color-gray-light: hsl(0deg, 0%, 60%);
+    --color-white: hsl(0deg, 0%, 100%);
+}
+
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Add styles here! */
+header {
+    border-bottom: var(--space-1) solid var(--color-gray-light);
+    padding-block: var(--space-5);
+}
+
+p {
+    font-size: var(--font-size-l);
+    margin-block: var(--space-3);
+}
+
+header p {
+    max-width: 415px;
+}
+
+main {
+    background-color: var(--color-gray-m);
+    padding-block: var(--space-6);
+}
+
+strong {
+    color: var(--color-primary);
+}
+
+.max-width-wrapper {
+    background-color: white;
+    margin-inline: auto;
+    max-width: 800px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--space-4);
+    margin-top: 0;
+}
+
+.intro-chunk {
+    padding: var(--space-3);
+}
+
+.card {
+    background-color: var(--color-white);
+    border-bottom: var(--space-1) solid var(--color-gray-light);
+    padding: var(--space-3);
+}
+
+.indented-heading {
+    background-color: var(--color-secondary-light);
+    border-bottom: var(--space-1) solid var(--color-secondary-dark);
+    display: inline-block;
+    margin: calc(var(--space-2) * -1) 0 0 calc(var(--space-4) * -1);
+    padding: var(--space-2) var(--space-4);
+}
